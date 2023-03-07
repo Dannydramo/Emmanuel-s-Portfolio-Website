@@ -1,12 +1,32 @@
 import Logo from "../assets/A.E.png";
 import OpenMenu from "../assets/icon-menu.svg";
 import Close from "../assets/icon-close.svg";
-import { useState } from "react";
+import React, { useState, useEffect } from 'react';
 const Navbar = () => {
   let [open, setOpen] = useState(false);
+  const [navbarBackground, setNavbarBackground] = useState('transparent');
+
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY;
+    if (scrollPosition > 100) {
+      setNavbarBackground('#fff'); 
+    } else {
+      setNavbarBackground('transparent'); 
+    }
+  };
+
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <div className="container fixed left-[5%] h-[10%]">
+   <div className="fixed left-[0] h-[10%] w-full flex items-center" style={{ backgroundColor: navbarBackground }}>
+     <div className="container">
       <nav className="flex items-start sm:items-center justify-between py-5">
         <img src={Logo} alt="Logo" />
 
@@ -30,6 +50,7 @@ const Navbar = () => {
         </div>
       </nav>
     </div>
+   </div>
   );
 };
 

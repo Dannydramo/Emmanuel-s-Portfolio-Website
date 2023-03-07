@@ -9,7 +9,7 @@ const About = () => {
         <div className="flex flex-col sm:flex-row justify-between items-center h-[90%] pt-8 lg:pt-20">
           <div className="sm:ml-8 lg:ml-16">
             <img src={Emoji} alt="" className="hidden sm:block" />
-            <h1 className="text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-bold my-8 w-full xl:w-[100%]">
+            <h1 className="text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-bold my-8 w-full xl:w-[100%] pt-6 sm:mt-0">
               A Pragmatist embodied with creativity and versatility
             </h1>
             <p className="text-lg">

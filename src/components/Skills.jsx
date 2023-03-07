@@ -5,9 +5,9 @@ const Skills = () => {
   return (
     <Fragment>
       <div className="container">
-        <div className="flex flex-col-reverse sm:flex-row justify-between ml-6 sm:ml-8 lg:ml-16 mt-10">
+        <div className="flex flex-col-reverse sm:flex-row justify-between sm:ml-8 lg:ml-16 mt-10">
           <div className="text-lg">
-            <p className="mb-8">Some of my core skills </p>
+            <p className="mb-8 mt-8 sm:mt-0 font-semibold">Some of my core skills </p>
 
             <div className="">
               <p>Design</p>
