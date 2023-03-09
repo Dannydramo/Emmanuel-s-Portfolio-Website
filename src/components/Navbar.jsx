@@ -37,11 +37,11 @@ const Navbar = () => {
         />
 
         <div
-          className={`flex flex-col text-redCyan sm:justify-between items-center  sm:flex-row sm:space-x-8 bg-bgCol sm:bg-transparent space-y-5 sm:space-y-0 sm:static fixed top-0 sm:h-auto h-screen w-screen duration-500 ease-linear sm:w-auto px-11 py-12 sm:py-0 sm:px-0 ${
+          className={`flex flex-col text-redCyan sm:justify-between sm:items-center  sm:flex-row sm:space-x-8 bg-bgCol sm:bg-transparent space-y-5 sm:space-y-0 sm:static fixed top-0 sm:h-auto h-screen w-screen duration-500 ease-linear sm:w-auto px-11 py-12 sm:py-0 sm:px-0 ${
             !open ? "right-[-100%]" : "right-0"
           }`}
         >
-          <ul className="space-x-0 mt-12 space-y-4 sm:flex sm:space-x-[5rem] text-lg sm:space-y-0 sm:mt-0">
+          <ul className="space-x-0 mt-12 space-y-4 sm:flex sm:space-x-[5rem] text-lg sm:space-y-0 sm:mt-0 absolute top-20 right-4 sm:relative sm:top-0">
             <li>Home</li>
             <li>About</li>
             <li>Portfolio</li>

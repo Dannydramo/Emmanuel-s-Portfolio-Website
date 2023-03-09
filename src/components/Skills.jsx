@@ -5,8 +5,8 @@ const Skills = () => {
   return (
     <Fragment>
       <div className="container">
-        <div className="flex flex-col-reverse sm:flex-row justify-between sm:ml-8 lg:ml-16 mt-10">
-          <div className="text-lg">
+        <div className="flex flex-col-reverse sm:flex-row justify-between sm:ml-8 lg:ml-16 mt-20">
+          <div className="text-xl">
             <p className="mb-8 mt-8 sm:mt-0 font-semibold">Some of my core skills </p>
 
             <div className="">
@@ -44,17 +44,17 @@ const Skills = () => {
               </p>
             </div>
           </div>
-          <div className="w-full sm:w-1/2 lg:w-2/5">
-            <p className="mb-8 text-lg"> Hi there, I am Emmanuel Amaechi. </p>
+          <div className="w-full sm:w-1/2 lg:w-[55%]">
+            <p className="mb-8 text-xl"> Hi there, I am Emmanuel Amaechi. </p>
 
-            <p className="text-lg">
+            <p className="text-xl lg:leading-[34px]">
               A creative UX UI Designer passionate about designing seamless user
               interface and experience on Mobile, Web and Desktop applications,
               I provide solutions to user problem by crafting high standard User
               interface Design.
             </p>
 
-            <p className="mt-8 text-lg">
+            <p className="mt-8 text-xl lg:leading-[34px]">
               I am passionate about creating universal solutions for users of
               all backgrounds using UX research methods and empathizing with the
               end users' needs. With my experience cutting across FinTech,
